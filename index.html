@@ -21,11 +21,11 @@
         </div>
         <div class="flex gap-5 mt-5 sm:mt-0"> 
             <div class="flex bg-[#41ff6b1a] w-[123px] h-[52px] justify-center items-center gap-3 rounded-4xl">
-                <p class="font-bold">0</p>
+                <p id="heart-count" class="font-bold">0</p>
                 <img class="w-[25px] h-[25px]" src="./assets/heart.png" alt="">
             </div>
             <div class="flex bg-[#41ff6b1a] w-[123px] h-[52px] justify-center items-center gap-3 rounded-4xl">
-                <p class="font-bold">100</p>
+                <p id="coin-count" class="font-bold">100</p>
                 <img class="w-[23px] h-[23px]" src="./assets/coin.png" alt="">
             </div>
             <div class="flex bg-[#00a63e] w-[123px] h-[52px] justify-center items-center gap-3 rounded-4xl">
@@ -45,6 +45,7 @@
 
     <!-- card & history section -->
     <div class="p-12">
+        <!-- card section -->
         <div class="grid grid-cols-1 gap-7 max-w-[1200px] lg:grid-cols-3">
             <!-- national emergency -->
             <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
@@ -59,7 +60,7 @@
                             <p class="text-sm text-gray-500">National Emergency</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -74,7 +75,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -93,7 +94,7 @@
                             <p class="text-sm text-gray-500">Police</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -108,7 +109,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button id="police-call" class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -127,7 +128,7 @@
                             <p class="text-sm text-gray-500">Fire Service</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -142,7 +143,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -161,7 +162,7 @@
                             <p class="text-sm text-gray-500">Ambulance</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -176,7 +177,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -195,7 +196,7 @@
                             <p class="text-sm text-gray-500">BRAC</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -210,7 +211,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -229,7 +230,7 @@
                             <p class="text-sm text-gray-500">Bangladesh Railway</p>
                         </div>
                     </div>
-                    <button class="text-gray-400 hover:text-red-500">❤️</button>
+                    <button class="heart-btn text-gray-400 hover:text-red-500">❤️</button>
                 </div>
 
                 <!-- Middle section -->
@@ -244,7 +245,7 @@
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium">
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-xl px-4 py-2 text-sm font-medium call-btn">
                         <i class="fa-solid fa-phone"></i>
                         Call
                     </button>
@@ -254,5 +255,7 @@
         </div>
     </div>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
