@@ -11,7 +11,7 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-[#f5fff6] h-[100vh]">
+<body class="bg-[#f5fff6] sm:h-[100vh]">
 
     <!-- navbar section -->
     <nav class="bg-white min-h-[50px] flex flex-col justify-between items-center p-4 sm:flex-row">
@@ -44,11 +44,11 @@
     </div>
 
     <!-- card & history section -->
-    <div class="p-12">
+    <div class="p-12 flex flex-col gap-6 sm:flex-row sm:justify-center">
         <!-- card section -->
         <div class="grid grid-cols-1 gap-7 max-w-[1200px] lg:grid-cols-3">
             <!-- national emergency -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <!-- police -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <!-- fire service -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <!-- ambulance service -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -184,7 +184,7 @@
                 </div>
             </div>
             <!-- brac helpline -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -218,7 +218,7 @@
                 </div>
             </div>
             <!-- Bangladesh railway helpline -->
-            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow p-5">
+            <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
@@ -252,6 +252,19 @@
                 </div>
             </div>
             
+        </div>
+
+        <!-- history section -->
+        <div class="bg-white max-w-[400px] min-h-9 p-6 rounded-xl shadow-xl">
+            <div class="flex justify-center items-center gap-24">
+                <h2 class="font-bold">
+                    <i class="fa-regular fa-clock"></i>
+                    Call History
+                </h2>
+                <button class="flex bg-[#00a63e] w-[110px] h-[45px] justify-center items-center gap-3 rounded-4xl font-semibold text-white">
+                    Clear
+                </button>
+            </div>
         </div>
     </div>
 
