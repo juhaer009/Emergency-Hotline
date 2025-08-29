@@ -46,14 +46,14 @@
     <!-- card & history section -->
     <div class="p-12 flex flex-col gap-6 sm:flex-row sm:justify-center">
         <!-- card section -->
-        <div class="grid grid-cols-1 gap-7 max-w-[1200px] lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-7 max-w-[1200px] sm:grid-cols-3">
             <!-- national emergency -->
             <div class="max-w-[400px] min-h-2.5  bg-white rounded-2xl shadow-xl p-5">
                 <!-- Top section -->
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100">
-                            <img class="w-[30px]" src="/assets/emergency.png" alt="">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">National Emergency Number</h2>
@@ -87,7 +87,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-100">
-                            <img class="w-[30px]" src="/assets/police.png" alt="">
+                            <img class="w-[30px]" src="./assets/police.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">Police Help Line</h2>
@@ -121,7 +121,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100">
-                            <img class="w-[30px]" src="/assets/fire-service.png" alt="">
+                            <img class="w-[30px]" src="./assets/fire-service.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">Fire Service Number</h2>
@@ -155,7 +155,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100">
-                            <img class="w-[30px]" src="/assets/ambulance.png" alt="">
+                            <img class="w-[30px]" src="./assets/ambulance.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">Ambulance Service</h2>
@@ -189,7 +189,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100">
-                            <img class="w-[30px]" src="/assets/brac.png" alt="">
+                            <img class="w-[30px]" src="./assets/brac.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">BRAC Helpline</h2>
@@ -223,7 +223,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center space-x-3">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100">
-                            <img class="w-[30px]" src="/assets/Bangladesh-Railway.png" alt="">
+                            <img class="w-[30px]" src="./assets/Bangladesh-Railway.png" alt="">
                         </div>
                         <div>
                             <h2 class="text-lg font-semibold text-gray-900">Bangladesh Railway Helpline </h2>
@@ -255,7 +255,7 @@
         </div>
 
         <!-- history section -->
-        <div class="bg-white max-w-[400px] min-h-9 p-6 rounded-xl shadow-xl">
+        <div id="history-container" class="bg-white max-w-[400px] min-h-9 p-6 rounded-xl shadow-xl">
             <div class="flex justify-center items-center gap-24">
                 <h2 class="font-bold">
                     <i class="fa-regular fa-clock"></i>
@@ -264,6 +264,9 @@
                 <button class="flex bg-[#00a63e] w-[110px] h-[45px] justify-center items-center gap-3 rounded-4xl font-semibold text-white">
                     Clear
                 </button>
+            </div>
+            <div id="history-element">
+
             </div>
         </div>
     </div>

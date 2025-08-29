@@ -27,6 +27,26 @@ for (let btn of callButtons) {
       coinElement.innerText = coinCount;
 
       alert('You are calling ' + serviceName + ' at ' + serviceNumber);
+      const history = document.getElementById('history-element')
+      // console.log(history)
+      const historyDiv = document.createElement('div');
+      historyDiv.className = ""
+      historyDiv.innerHTML = `
+              <div class="bg-[#c6c4c4] rounded-xl flex justify-between items-center p-2 mt-2" >
+                <div>
+                    <h4 class="font-[600] text-[16px]">${serviceName}</h4>
+                    <h5 class="font-[500]">${serviceNumber}</h5>
+                </div>
+                <p class="text-[13px] font-bold">${new Date().toLocaleTimeString()}</p>
+              </div>
+                `;
+      history.appendChild(historyDiv)
+      // const serviceNameElem = document.createElement('p')
+      // serviceNameElem.appendChild(serviceName)
+      // const serviceNumberElem = document.createElement('p')
+      // serviceNumberElem.appendChild(serviceNumber)
+      // historyDiv.appendChild(serviceNameElem)
+      // historyDiv.appendChild(serviceNumberElem)
     } 
     else {
       alert('Your coin is less than 20. Please reload coins to make this call');
