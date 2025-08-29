@@ -30,7 +30,7 @@ for (let btn of callButtons) {
       const history = document.getElementById('history-element')
       // console.log(history)
       const historyDiv = document.createElement('div');
-      historyDiv.className = ""
+      historyDiv.className = "dlt-history"
       historyDiv.innerHTML = `
               <div class="bg-[#c6c4c4] rounded-xl flex justify-between items-center p-2 mt-2" >
                 <div>
@@ -67,3 +67,12 @@ for (let btn of copyButtons){
     document.getElementById('copy-count').innerText = copyCount;
   })
 }
+
+// clear button functionality
+const deleteHistory = document.getElementsByClassName('dlt-history')
+document.getElementById('clear-btn').
+  addEventListener('click', function(){
+    for(let history of deleteHistory){
+      history.style.display = 'none'
+    }
+  })
